@@ -17,10 +17,10 @@ function a2zbpe_register_admin_menu() {
 
 	add_submenu_page(
 		'edit.php?post_type=product',
-		__( 'A2Z Bulk Price Changer Free', 'a2z-bulk-price-changer-free' ),
-		__( 'Price Changer', 'a2z-bulk-price-changer-free' ),
+		__( 'Tasbeeh Price Editor', 'tasbeeh-price-editor' ),
+		__( 'Price Changer', 'tasbeeh-price-editor' ),
 		'manage_woocommerce',
-		'a2z-bulk-price-changer-free',
+		'tasbeeh-price-editor',
 		'a2zbpe_render_admin_page'
 	);
 

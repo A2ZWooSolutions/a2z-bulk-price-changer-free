@@ -20,14 +20,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="a2zbpe-bulk-rules">
 
 			<h2>
-				<?php esc_html_e( 'Bulk Pricing', 'a2z-bulk-price-changer-free' ); ?>
+				<?php esc_html_e( 'Bulk Pricing', 'tasbeeh-price-editor' ); ?>
 			</h2>
 
 			<p>
 				<?php
 				esc_html_e(
 					'Configure a pricing rule and apply it to the selected simple products.',
-					'a2z-bulk-price-changer-free'
+					'tasbeeh-price-editor'
 				);
 				?>
 			</p>
@@ -38,21 +38,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="a2zbpe-bulk-field">
 
 					<label for="a2zbpe-bulk-price-type" style="display: flex; flex-direction: column;">
-						<?php esc_html_e( 'Price type', 'a2z-bulk-price-changer-free' ); ?>
+						<?php esc_html_e( 'Price type', 'tasbeeh-price-editor' ); ?>
 					</label>
 
 					<select id="a2zbpe-bulk-price-type">
 
 						<option value="regular">
-							<?php esc_html_e( 'Regular price', 'a2z-bulk-price-changer-free' ); ?>
+							<?php esc_html_e( 'Regular price', 'tasbeeh-price-editor' ); ?>
 						</option>
 
 						<option value="sale">
-							<?php esc_html_e( 'Sale price', 'a2z-bulk-price-changer-free' ); ?>
+							<?php esc_html_e( 'Sale price', 'tasbeeh-price-editor' ); ?>
 						</option>
 
 						<option value="both">
-							<?php esc_html_e( 'Both price', 'a2z-bulk-price-changer-free' ); ?>
+							<?php esc_html_e( 'Both price', 'tasbeeh-price-editor' ); ?>
 						</option>
 
 					</select>
@@ -63,21 +63,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="a2zbpe-bulk-field">
 
 					<label for="a2zbpe-bulk-pricing-method" style="display: flex; flex-direction: column;">
-						<?php esc_html_e( 'Pricing rule', 'a2z-bulk-price-changer-free' ); ?>
+						<?php esc_html_e( 'Pricing rule', 'tasbeeh-price-editor' ); ?>
 					</label>
 
 					<select id="a2zbpe-bulk-pricing-method">
 
 						<option value="increase_fixed">
-							<?php esc_html_e( 'Increase by fixed amount', 'a2z-bulk-price-changer-free' ); ?>
+							<?php esc_html_e( 'Increase by fixed amount', 'tasbeeh-price-editor' ); ?>
 						</option>
 
 						<option value="decrease_fixed">
-							<?php esc_html_e( 'Decrease by fixed amount', 'a2z-bulk-price-changer-free' ); ?>
+							<?php esc_html_e( 'Decrease by fixed amount', 'tasbeeh-price-editor' ); ?>
 						</option>
 
 						<option value="set_price">
-							<?php esc_html_e( 'Set new price', 'a2z-bulk-price-changer-free' ); ?>
+							<?php esc_html_e( 'Set new price', 'tasbeeh-price-editor' ); ?>
 						</option>
 
 					</select>
@@ -88,7 +88,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="a2zbpe-bulk-field">
 
 					<label for="a2zbpe-bulk-pricing-value" style="display: flex; flex-direction: column;">
-						<?php esc_html_e( 'Amount', 'a2z-bulk-price-changer-free' ); ?>
+						<?php esc_html_e( 'Amount', 'tasbeeh-price-editor' ); ?>
 					</label>
 
 					<input
@@ -111,7 +111,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<?php
 					esc_html_e(
 						'Selected:',
-						'a2z-bulk-price-changer-free'
+						'tasbeeh-price-editor'
 					);
 					?>
 
@@ -128,7 +128,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<?php
 					esc_html_e(
 						'Apply to selected products',
-						'a2z-bulk-price-changer-free'
+						'tasbeeh-price-editor'
 					);
 					?>
 				</button>
@@ -170,7 +170,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<?php
 							esc_html_e(
 								'Product',
-								'a2z-bulk-price-changer-free'
+								'tasbeeh-price-editor'
 							);
 							?>
 						</th>
@@ -179,7 +179,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<?php
 							esc_html_e(
 								'Status',
-								'a2z-bulk-price-changer-free'
+								'tasbeeh-price-editor'
 							);
 							?>
 						</th>
@@ -188,7 +188,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<?php
 							esc_html_e(
 								'Stock',
-								'a2z-bulk-price-changer-free'
+								'tasbeeh-price-editor'
 							);
 							?>
 						</th>
@@ -197,7 +197,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<?php
 							esc_html_e(
 								'Price',
-								'a2z-bulk-price-changer-free'
+								'tasbeeh-price-editor'
 							);
 							?>
 						</th>

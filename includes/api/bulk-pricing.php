@@ -21,7 +21,7 @@ function a2zbpe_validate_bulk_pricing_rule( $rule ) {
 			'invalid_pricing_rule',
 			__(
 				'Invalid pricing rule.',
-				'a2z-bulk-price-changer-free'
+				'tasbeeh-price-editor'
 			)
 		);
 	}
@@ -45,7 +45,7 @@ function a2zbpe_validate_bulk_pricing_rule( $rule ) {
 			'invalid_pricing_method',
 			__(
 				'Please select a pricing rule.',
-				'a2z-bulk-price-changer-free'
+				'tasbeeh-price-editor'
 			)
 		);
 	}
@@ -67,7 +67,7 @@ function a2zbpe_validate_bulk_pricing_rule( $rule ) {
 			'invalid_pricing_method',
 			__(
 				'Invalid pricing method.',
-				'a2z-bulk-price-changer-free'
+				'tasbeeh-price-editor'
 			)
 		);
 	}
@@ -82,7 +82,7 @@ function a2zbpe_validate_bulk_pricing_rule( $rule ) {
 			'invalid_pricing_value',
 			__(
 				'Please enter a valid pricing value.',
-				'a2z-bulk-price-changer-free'
+				'tasbeeh-price-editor'
 			)
 		);
 	}
@@ -120,7 +120,7 @@ function a2zbpe_calculate_bulk_price(
 			'invalid_price_base',
 			__(
 				'This product does not have a current price for this adjustment.',
-				'a2z-bulk-price-changer-free'
+				'tasbeeh-price-editor'
 			)
 		);
 	}
@@ -167,7 +167,7 @@ function a2zbpe_calculate_bulk_price(
 				'invalid_pricing_method',
 				__(
 					'Invalid pricing method.',
-					'a2z-bulk-price-changer-free'
+					'tasbeeh-price-editor'
 				)
 			);
 	}
@@ -242,7 +242,7 @@ function a2zbpe_validate_bulk_product_prices( $product ) {
 			'invalid_sale_price',
 			__(
 				'Sale price cannot be greater than the regular price.',
-				'a2z-bulk-price-changer-free'
+				'tasbeeh-price-editor'
 			)
 		);
 	}
@@ -293,7 +293,7 @@ function a2zbpe_apply_bulk_single_price(
 				'invalid_sale_base',
 				__(
 					'This product does not have a sale price for this adjustment.',
-					'a2z-bulk-price-changer-free'
+					'tasbeeh-price-editor'
 				)
 			);
 		}
@@ -303,7 +303,7 @@ function a2zbpe_apply_bulk_single_price(
 			'invalid_regular_base',
 			__(
 				'This product does not have a regular price for this adjustment.',
-				'a2z-bulk-price-changer-free'
+				'tasbeeh-price-editor'
 			)
 		);
 	}
@@ -404,7 +404,7 @@ function a2zbpe_apply_bulk_both_prices(
 			'invalid_price_base',
 			__(
 				'This product does not have a price for this adjustment.',
-				'a2z-bulk-price-changer-free'
+				'tasbeeh-price-editor'
 			)
 		);
 	}
@@ -503,7 +503,7 @@ function a2zbpe_ajax_apply_bulk_pricing() {
 			array(
 				'message' => __(
 					'Invalid price type.',
-					'a2z-bulk-price-changer-free'
+					'tasbeeh-price-editor'
 				),
 			),
 			400
@@ -545,7 +545,7 @@ function a2zbpe_ajax_apply_bulk_pricing() {
 			array(
 				'message' => __(
 					'Set price cannot be used when both price types are selected.',
-					'a2z-bulk-price-changer-free'
+					'tasbeeh-price-editor'
 				),
 			),
 			400
@@ -605,11 +605,11 @@ function a2zbpe_ajax_apply_bulk_pricing() {
 				'id'      => $product_id,
 				'name'    => __(
 					'Unknown product',
-					'a2z-bulk-price-changer-free'
+					'tasbeeh-price-editor'
 				),
 				'message' => __(
 					'Product could not be found.',
-					'a2z-bulk-price-changer-free'
+					'tasbeeh-price-editor'
 				),
 			);
 
@@ -628,7 +628,7 @@ function a2zbpe_ajax_apply_bulk_pricing() {
 				'name'    => $product->get_name(),
 				'message' => __(
 					'Only simple products can be updated by bulk pricing.',
-					'a2z-bulk-price-changer-free'
+					'tasbeeh-price-editor'
 				),
 			);
 
@@ -745,7 +745,7 @@ function a2zbpe_ajax_apply_bulk_pricing() {
 		array(
 			'message'  => __(
 				'Bulk pricing completed.',
-				'a2z-bulk-price-changer-free'
+				'tasbeeh-price-editor'
 			),
 			'updated'  => $updated,
 			'failed'   => $failed,

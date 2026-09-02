@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:       A2Z Bulk Price Changer Free
- * Plugin URI:        https://a2zwoosolutions.com/bulk-price-changer-free/
+ * Plugin Name:       Tasbeeh Price Editor
+ * Plugin URI:        https://a2zwoosolutions.com/tasbeeh-price-editor/
  * Description:       An advanced product price editor for WooCommerce.
  * Version:           1.0.0
  * Requires at least: 6.9
@@ -11,7 +11,7 @@
  * Author URI:        https://a2zwoosolutions.com/
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       a2z-bulk-price-changer-free
+ * Text Domain:       tasbeeh-price-editor
  * Domain Path:       /languages
  */
 

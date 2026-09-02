@@ -2,7 +2,7 @@
 /**
  * Uninstall Plugin.
  *
- * @package a2z-bulk-price-changer-free
+ * @package tasbeeh-price-editor
  */
 
 /**

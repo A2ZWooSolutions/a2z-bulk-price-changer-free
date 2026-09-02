@@ -33,10 +33,10 @@ if ( function_exists( 'wc_get_product_statuses' ) ) {
 if ( empty( $a2zbpe_statuses ) ) {
 
 	$a2zbpe_statuses = array(
-		'publish' => __( 'Published', 'a2z-bulk-price-changer-free' ),
-		'draft'   => __( 'Draft', 'a2z-bulk-price-changer-free' ),
-		'pending' => __( 'Pending Review', 'a2z-bulk-price-changer-free' ),
-		'private' => __( 'Private', 'a2z-bulk-price-changer-free' ),
+		'publish' => __( 'Published', 'tasbeeh-price-editor' ),
+		'draft'   => __( 'Draft', 'tasbeeh-price-editor' ),
+		'pending' => __( 'Pending Review', 'tasbeeh-price-editor' ),
+		'private' => __( 'Private', 'tasbeeh-price-editor' ),
 	);
 
 }
@@ -53,7 +53,7 @@ if ( empty( $a2zbpe_statuses ) ) {
 				<div class="a2zbpe-filter-field">
 
 					<label for="a2zbpe-category">
-						<?php esc_html_e( 'Category', 'a2z-bulk-price-changer-free' ); ?>
+						<?php esc_html_e( 'Category', 'tasbeeh-price-editor' ); ?>
 					</label>
 
 					<select
@@ -62,7 +62,7 @@ if ( empty( $a2zbpe_statuses ) ) {
 					>
 
 						<option value="">
-							<?php esc_html_e( 'All Categories', 'a2z-bulk-price-changer-free' ); ?>
+							<?php esc_html_e( 'All Categories', 'tasbeeh-price-editor' ); ?>
 						</option>
 
 						<?php
@@ -91,7 +91,7 @@ if ( empty( $a2zbpe_statuses ) ) {
 				<div class="a2zbpe-filter-field">
 
 					<label for="a2zbpe-stock-status">
-						<?php esc_html_e( 'Stock Status', 'a2z-bulk-price-changer-free' ); ?>
+						<?php esc_html_e( 'Stock Status', 'tasbeeh-price-editor' ); ?>
 					</label>
 
 					<select
@@ -100,7 +100,7 @@ if ( empty( $a2zbpe_statuses ) ) {
 					>
 
 						<option value="">
-							<?php esc_html_e( 'All Stock Statuses', 'a2z-bulk-price-changer-free' ); ?>
+							<?php esc_html_e( 'All Stock Statuses', 'tasbeeh-price-editor' ); ?>
 						</option>
 
 						<?php
@@ -129,7 +129,7 @@ if ( empty( $a2zbpe_statuses ) ) {
 				<div class="a2zbpe-filter-field">
 
 					<label for="a2zbpe-status">
-						<?php esc_html_e( 'Product Status', 'a2z-bulk-price-changer-free' ); ?>
+						<?php esc_html_e( 'Product Status', 'tasbeeh-price-editor' ); ?>
 					</label>
 
 					<select
@@ -138,7 +138,7 @@ if ( empty( $a2zbpe_statuses ) ) {
 					>
 
 						<option value="">
-							<?php esc_html_e( 'All Statuses', 'a2z-bulk-price-changer-free' ); ?>
+							<?php esc_html_e( 'All Statuses', 'tasbeeh-price-editor' ); ?>
 						</option>
 
 						<?php
@@ -177,7 +177,7 @@ if ( empty( $a2zbpe_statuses ) ) {
 				id="a2zbpe-apply-filters"
 				disabled
 			>
-				<?php esc_html_e( 'Apply Filters', 'a2z-bulk-price-changer-free' ); ?>
+				<?php esc_html_e( 'Apply Filters', 'tasbeeh-price-editor' ); ?>
 			</button>
 
 			<button
@@ -185,7 +185,7 @@ if ( empty( $a2zbpe_statuses ) ) {
 				id="a2zbpe-reset-filters"
 				class="button"
 			>
-				<?php esc_html_e( 'Reset', 'a2z-bulk-price-changer-free' ); ?>
+				<?php esc_html_e( 'Reset', 'tasbeeh-price-editor' ); ?>
 			</button>
 
 		</div>
@@ -193,160 +193,3 @@ if ( empty( $a2zbpe_statuses ) ) {
 	</div>
 
 </div>
-
-
-<script>
-jQuery(document).ready(function ($) {
-
-	'use strict';
-
-
-	/**
-	 * Get the current filter state.
-	 *
-	 * All three filters are required before
-	 * the user can perform a filter operation.
-	 *
-	 * @return {boolean}
-	 */
-	function a2zbpe_filters_are_complete() {
-
-		var category = $.trim(
-			$('#a2zbpe-category').val() || ''
-		);
-
-		var stockStatus = $.trim(
-			$('#a2zbpe-stock-status').val() || ''
-		);
-
-		var status = $.trim(
-			$('#a2zbpe-status').val() || ''
-		);
-
-
-		return (
-			'' !== category &&
-			'' !== stockStatus &&
-			'' !== status
-		);
-
-	}
-
-
-	/**
-	 * Update the Apply Filters button.
-	 *
-	 * The button remains disabled until all
-	 * three filters have been configured.
-	 */
-	function a2zbpe_update_filter_button() {
-
-		var isComplete =
-			a2zbpe_filters_are_complete();
-
-
-		$('#a2zbpe-apply-filters').prop(
-			'disabled',
-			!isComplete
-		);
-
-
-		/*
-		 * Give the user a useful native tooltip
-		 * while the button is disabled.
-		 */
-		if (!isComplete) {
-
-			$('#a2zbpe-apply-filters').attr(
-				'title',
-				'Select a category, stock status, and product status.'
-			);
-
-		} else {
-
-			$('#a2zbpe-apply-filters').removeAttr(
-				'title'
-			);
-
-		}
-
-	}
-
-
-	/**
-	 * Update the button whenever a filter changes.
-	 */
-	$(document).on(
-		'change',
-		'#a2zbpe-category, #a2zbpe-stock-status, #a2zbpe-status',
-		function () {
-
-			a2zbpe_update_filter_button();
-
-		}
-	);
-
-
-	/**
-	 * Prevent incomplete user-submitted filtering.
-	 *
-	 * This is an additional safety layer beyond
-	 * the disabled button state.
-	 */
-	$(document).on(
-		'submit',
-		'#a2zbpe-filter-form',
-		function (event) {
-
-			/*
-			 * A programmatic submit triggered internally
-			 * after bulk pricing is allowed to proceed.
-			 *
-			 * User-initiated filtering must contain all
-			 * three filter values.
-			 */
-			if (
-				event.originalEvent &&
-				!a2zbpe_filters_are_complete()
-			) {
-
-				event.preventDefault();
-
-				a2zbpe_update_filter_button();
-
-				return false;
-			}
-
-		}
-	);
-
-
-	/**
-	 * Reset the UI state after the existing reset
-	 * handler clears the actual form.
-	 */
-	$(document).on(
-		'click',
-		'#a2zbpe-reset-filters',
-		function () {
-
-			setTimeout(
-				function () {
-
-					a2zbpe_update_filter_button();
-
-				},
-				0
-			);
-
-		}
-	);
-
-
-	/*
-	 * Initialize the button state.
-	 */
-	a2zbpe_update_filter_button();
-
-});
-</script>

@@ -2,7 +2,7 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: A2Z Bulk Price Changer Free 1.0.0\n"
+"Project-Id-Version: Tasbeeh Price Editor 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/workdir\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,31 +12,31 @@ msgstr ""
 "POT-Creation-Date: 2026-08-28T15:52:47+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: a2z-bulk-price-changer-free\n"
+"X-Domain: tasbeeh-price-editor\n"
 
 #. Plugin Name of the plugin
-#: a2z-bulk-price-changer-free.php
+#: tasbeeh-price-editor.php
 #: includes/admin/admin-menu.php:20
-msgid "A2Z Bulk Price Changer Free"
+msgid "Tasbeeh Price Editor"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: a2z-bulk-price-changer-free.php
-msgid "https://a2zwoosolutions.com/a2z-bulk-price-changer-free"
+#: tasbeeh-price-editor.php
+msgid "https://a2zwoosolutions.com/tasbeeh-price-editor"
 msgstr ""
 
 #. Description of the plugin
-#: a2z-bulk-price-changer-free.php
+#: tasbeeh-price-editor.php
 msgid "An advanced product price editor for WooCommerce."
 msgstr ""
 
 #. Author of the plugin
-#: a2z-bulk-price-changer-free.php
+#: tasbeeh-price-editor.php
 msgid "A2Z Woo Solutions"
 msgstr ""
 
 #. Author URI of the plugin
-#: a2z-bulk-price-changer-free.php
+#: tasbeeh-price-editor.php
 msgid "https://a2zwoosolutions.com/"
 msgstr ""
 

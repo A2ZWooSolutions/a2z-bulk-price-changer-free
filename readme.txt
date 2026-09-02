@@ -1,4 +1,4 @@
-=== A2Z Bulk Price Changer Free ===
+=== Tasbeeh Price Editor ===
 Tags: woocommerce, bulk price editor, product pricing, bulk pricing, price changer
 Requires at least: 6.9
 Tested up to: 7.1
@@ -12,7 +12,7 @@ A simple WooCommerce plugin for changing simple product prices in bulk.
 
 == Description ==
 
-A2Z Bulk Price Changer Free is a simple WooCommerce plugin designed to make bulk product price management faster and easier.
+Tasbeeh Price Editor is a simple WooCommerce plugin designed to make bulk product price management faster and easier.
 
 It provides a dedicated admin interface where WooCommerce store owners can filter products and apply price changes to multiple products at once.
 
@@ -73,7 +73,7 @@ Always review the selected products, price type, adjustment direction, and fixed
 
 = Does this plugin require WooCommerce? =
 
-Yes. WooCommerce must be installed and activated for A2Z Bulk Price Changer Free to work.
+Yes. WooCommerce must be installed and activated for Tasbeeh Price Editor to work.
 
 = Which WordPress versions are supported? =
 
@@ -125,7 +125,7 @@ No. The Free version focuses exclusively on bulk price editing.
 
 == Compatibility ==
 
-A2Z Bulk Price Changer Free is currently developed and tested against:
+Tasbeeh Price Editor is currently developed and tested against:
 
 * WordPress 6.9
 * PHP 7.4+

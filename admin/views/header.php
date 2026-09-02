@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="wrap a2zbpe-wrap">
 
 	<h1 class="wp-heading-inline">
-		<?php esc_html_e( 'A2Z Bulk Price Changer', 'a2z-bulk-price-changer-free' ); ?>
+		<?php esc_html_e( 'A2Z Bulk Price Changer', 'tasbeeh-price-editor' ); ?>
 	</h1>
 
 	<hr class="wp-header-end">

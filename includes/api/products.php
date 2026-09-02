@@ -25,7 +25,7 @@ function a2zbpe_verify_ajax_request() {
 			array(
 				'message' => __(
 					'You do not have permission to perform this action.',
-					'a2z-bulk-price-changer-free'
+					'tasbeeh-price-editor'
 				),
 			),
 			403

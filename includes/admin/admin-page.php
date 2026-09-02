@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function a2zbpe_enqueue_admin_assets( $hook_suffix ) {
 
-	if ( 'product_page_a2z-bulk-price-changer-free' !== $hook_suffix ) {
+	if ( 'product_page_tasbeeh-price-editor' !== $hook_suffix ) {
 		return;
 	}
 
@@ -49,6 +49,13 @@ function a2zbpe_enqueue_admin_assets( $hook_suffix ) {
 	);
 
 	wp_enqueue_style(
+		'a2zbpe-footer',
+		A2ZBPE_PLUGIN_URL . 'admin/assets/css/footer.css',
+		array( 'a2zbpe-admin' ),
+		A2ZBPE_VERSION
+    );
+
+	wp_enqueue_style(
 		'a2zbpe-admin-responsive',
 		A2ZBPE_PLUGIN_URL . 'admin/assets/css/admin-responsive.css',
 		array(
@@ -66,6 +73,14 @@ function a2zbpe_enqueue_admin_assets( $hook_suffix ) {
 		A2ZBPE_VERSION,
 		true
 	);
+
+	wp_enqueue_script(
+		'a2zbpe-search-filter',
+		A2ZBPE_PLUGIN_URL . 'admin/assets/js/search-filter.js',
+		array( 'jquery' ),
+		A2ZBPE_VERSION,
+		true
+    );
 
 	wp_enqueue_script(
 		'a2zbpe-admin-bulk-edit',
