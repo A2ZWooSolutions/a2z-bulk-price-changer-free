@@ -1,0 +1,177 @@
+/**
+ * a2zbpe Responsive Admin Styles
+ */
+
+
+/* =========================================================
+ * Tablet
+ * ========================================================= */
+
+@media screen and (max-width: 1100px) {
+
+	.a2zbpe-editor-variations {
+		grid-template-columns: 1fr;
+	}
+
+	.a2zbpe-price-rule {
+		grid-template-columns:
+			140px
+			minmax(130px, 1fr)
+			minmax(160px, 1fr);
+	}
+
+}
+
+
+/* =========================================================
+ * Small tablet
+ * ========================================================= */
+
+@media screen and (max-width: 900px) {
+
+	.a2zbpe-filter-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.a2zbpe-controls-actions {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.a2zbpe-filter-actions {
+		align-self: flex-start;
+	}
+
+	.a2zbpe-search-section {
+		width: 100%;
+	}
+
+	.a2zbpe-search-field {
+		flex: 1;
+		width: auto;
+	}
+
+	.a2zbpe-price-rule {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.a2zbpe-price-rule > label {
+		grid-column: 1 / -1;
+	}
+
+	.a2zbpe-bulk-price-rule {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.a2zbpe-bulk-price-field:last-child {
+		grid-column: 1 / -1;
+	}
+
+}
+
+
+/* =========================================================
+ * Mobile
+ * ========================================================= */
+
+@media screen and (max-width: 600px) {
+
+	.a2zbpe-controls {
+		padding: 15px;
+	}
+
+	.a2zbpe-filter-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.a2zbpe-filter-actions {
+		flex-wrap: wrap;
+	}
+
+	.a2zbpe-search-form {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.a2zbpe-search-field {
+		width: 100%;
+	}
+
+	.a2zbpe-search-form .button {
+		align-self: flex-start;
+	}
+
+
+	/* Quick Edit */
+
+	.a2zbpe-editor {
+		padding: 15px;
+	}
+
+	.a2zbpe-editor-variations {
+		grid-template-columns: 1fr;
+	}
+
+	.a2zbpe-editor-variation {
+		padding: 14px;
+	}
+
+	.a2zbpe-price-rule {
+		grid-template-columns: 1fr;
+		gap: 8px;
+		padding: 12px;
+	}
+
+	.a2zbpe-price-rule > label {
+		grid-column: auto;
+	}
+
+	.a2zbpe-current-price {
+		justify-content: flex-start;
+		width: fit-content;
+	}
+
+	.a2zbpe-editor-actions {
+		justify-content: stretch;
+	}
+
+	.a2zbpe-editor-actions .button {
+		flex: 1;
+	}
+
+
+	/* Bulk Edit */
+
+	.a2zbpe-bulk-rules {
+		padding: 15px;
+	}
+
+	.a2zbpe-bulk-price-rule {
+		grid-template-columns: 1fr;
+		gap: 10px;
+		padding: 13px;
+	}
+
+	.a2zbpe-bulk-price-field:last-child {
+		grid-column: auto;
+	}
+
+	.a2zbpe-bulk-actions {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.a2zbpe-bulk-apply {
+		width: 100%;
+	}
+
+
+	/* Variation price preview */
+
+	.a2zbpe-variation-price-card {
+		left: 50%;
+		width: min(360px, calc(100vw - 40px));
+		transform: translateX(-50%);
+	}
+
+}

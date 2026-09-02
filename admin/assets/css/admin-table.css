@@ -1,0 +1,160 @@
+/**
+ * a2zbpe Product Tables
+ */
+
+
+/* =========================================================
+ * Product table
+ * ========================================================= */
+
+.a2zbpe-table-wrapper {
+	overflow-x: auto;
+}
+
+.a2zbpe-product-table th,
+.a2zbpe-product-table td {
+	vertical-align: middle;
+}
+
+.a2zbpe-product-cell {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-width: 240px;
+}
+
+.a2zbpe-product-image {
+	width: 45px;
+	height: 45px;
+	object-fit: cover;
+	border: 1px solid #dcdcde;
+}
+
+.a2zbpe-product-name {
+	font-weight: 600;
+}
+
+.a2zbpe-price-cell > div {
+	margin-bottom: 3px;
+}
+
+.a2zbpe-regular-price {
+	color: #1d2327;
+}
+
+.a2zbpe-sale-price {
+	color: #b32d2e;
+}
+
+.a2zbpe-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.a2zbpe-loading {
+	padding: 30px !important;
+	color: #646970;
+	text-align: center;
+}
+
+
+/* =========================================================
+ * Variation price preview
+ * ========================================================= */
+
+.a2zbpe-variation-price-preview {
+	position: relative;
+	display: inline-block;
+}
+
+.a2zbpe-show-variation-prices {
+	display: inline-block;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.a2zbpe-show-variation-prices:hover {
+	text-decoration: underline;
+}
+
+.a2zbpe-variation-price-card {
+	position: absolute;
+	bottom: calc(100% + 8px);
+	left: 0;
+	z-index: 999999;
+	display: none;
+	box-sizing: border-box;
+	width: 360px;
+	max-height: 360px;
+	padding: 14px;
+	overflow-y: auto;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 6px;
+	box-shadow:
+		0 8px 24px rgba(0, 0, 0, 0.15),
+		0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.a2zbpe-variation-price-preview.is-open
+	.a2zbpe-variation-price-card {
+	display: block;
+}
+
+.a2zbpe-variation-price-title {
+	display: block;
+	margin-bottom: 4px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dcdcde;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.a2zbpe-variation-price-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.a2zbpe-variation-price-item {
+	padding: 10px 0;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+.a2zbpe-variation-price-item:last-child {
+	border-bottom: 0;
+}
+
+.a2zbpe-variation-attributes {
+	margin-bottom: 5px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.a2zbpe-variation-prices {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.a2zbpe-variation-regular-price {
+	color: #50575e;
+}
+
+.a2zbpe-variation-sale-price {
+	color: #008a20;
+	font-weight: 600;
+}
+
+.a2zbpe-variation-no-price,
+.a2zbpe-no-variation-prices {
+	color: #787c82;
+	font-style: italic;
+}
+
+.a2zbpe-no-variation-prices {
+	padding: 8px 0;
+}

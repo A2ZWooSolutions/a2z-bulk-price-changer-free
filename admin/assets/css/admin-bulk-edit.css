@@ -1,0 +1,217 @@
+/**
+ * a2zbpe Bulk Edit
+ *
+ * Bulk pricing engine and bulk actions.
+ */
+
+
+/* =========================================================
+ * Bulk pricing container
+ * ========================================================= */
+
+.a2zbpe-bulk-rules {
+	margin-bottom: 20px;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.a2zbpe-bulk-rules h2 {
+	margin: 0 0 6px;
+	color: #1d2327;
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+.a2zbpe-bulk-rules>p {
+	margin: 0 0 20px;
+	color: #646970;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+
+/* =========================================================
+ * Pricing engine
+ * ========================================================= */
+
+.a2zbpe-bulk-pricing-engine {
+	display: flex;
+	gap: 12px;
+}
+
+
+/* =========================================================
+ * Pricing rule
+ * ========================================================= */
+
+.a2zbpe-bulk-price-rule {
+	display: grid;
+	grid-template-columns: 150px minmax(200px, 1fr) minmax(160px, 220px);
+	align-items: end;
+	gap: 14px;
+	padding: 16px;
+	background: #f8f9fa;
+	border: 1px solid #e2e4e7;
+	border-radius: 6px;
+}
+
+.a2zbpe-bulk-price-rule[data-price-type="regular"] {
+	border-left: 3px solid #2271b1;
+}
+
+.a2zbpe-bulk-price-rule[data-price-type="sale"] {
+	border-left: 3px solid #dba617;
+}
+
+
+/* =========================================================
+ * Pricing fields
+ * ========================================================= */
+
+.a2zbpe-bulk-price-field {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.a2zbpe-bulk-price-field label {
+	margin: 0;
+	color: #1d2327;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.a2zbpe-bulk-price-field select,
+.a2zbpe-bulk-price-field input[type="number"] {
+	width: 100%;
+	min-height: 38px;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.a2zbpe-bulk-price-field select:focus,
+.a2zbpe-bulk-price-field input[type="number"]:focus {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+
+/* =========================================================
+ * Value field
+ * ========================================================= */
+
+.a2zbpe-bulk-price-value-wrapper {
+	position: relative;
+}
+
+.a2zbpe-bulk-price-value-wrapper input {
+	padding-right: 40px;
+}
+
+.a2zbpe-bulk-price-unit {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	color: #646970;
+	font-size: 12px;
+	font-weight: 600;
+	pointer-events: none;
+}
+
+
+/* =========================================================
+ * Selection information
+ * ========================================================= */
+
+.a2zbpe-bulk-selection-info {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	color: #50575e;
+	font-size: 13px;
+}
+
+.a2zbpe-bulk-selection-info strong {
+	color: #1d2327;
+}
+
+#a2zbpe-bulk-selected-count {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 24px;
+	height: 24px;
+	padding: 0 7px;
+	box-sizing: border-box;
+	border-radius: 12px;
+	background: #2271b1;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+
+/* =========================================================
+ * Bulk actions
+ * ========================================================= */
+
+.a2zbpe-bulk-actions {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	margin-top: 16px;
+	padding-top: 16px;
+	border-top: 1px solid #dcdcde;
+}
+
+.a2zbpe-bulk-apply {
+	min-height: 38px;
+	padding: 0 18px;
+	font-weight: 600;
+}
+
+
+/* =========================================================
+ * Bulk notices
+ * ========================================================= */
+
+.a2zbpe-bulk-notice {
+	display: none;
+	margin-top: 15px;
+	padding: 12px 14px;
+	border-left: 4px solid #2271b1;
+	background: #f0f6fc;
+	color: #1d2327;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.a2zbpe-bulk-notice.is-visible {
+	display: block;
+}
+
+.a2zbpe-bulk-notice.is-error {
+	border-left-color: #d63638;
+	background: #fcf0f1;
+}
+
+.a2zbpe-bulk-notice.is-success {
+	border-left-color: #00a32a;
+	background: #edfaef;
+}
+
+
+/* =========================================================
+ * Loading state
+ * ========================================================= */
+
+.a2zbpe-bulk-pricing-engine.is-loading {
+	pointer-events: none;
+	opacity: 0.6;
+}
